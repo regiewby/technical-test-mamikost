@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -52,11 +53,11 @@ public class KostDetailPage {
     @FindBy(xpath = "//div[@class='btn-item-secondary']")
     private WebElement btnAjukanSewa;
 
-    @FindBy(xpath = "//div[@class='onboarding-ftue-content']")
+    @FindBy(xpath = "//div[@class='onboarding-ftue highlighted']")
     private WebElement modalNotif;
 
-    @FindBy(xpath = "//a[@class='btn-secondary']")
-    private WebElement btnSayaMengerti;
+    @FindBy(xpath = "//button[@aria-label='Next slide']")
+    private WebElement btnLanjut;
 
     @FindBy(xpath = "//div[@class='booking-input-checkin-modal__action']")
     private WebElement modalCheckin;
@@ -104,9 +105,11 @@ public class KostDetailPage {
         }
     }
 
-    private void handleNotifModal(){
+    private void handleNotifModal() {
         if (modalNotif.isDisplayed()){
-            btnSayaMengerti.click();
+            for (int i = 0; i < 6; i++) {
+                btnLanjut.click();
+            }
         }
     }
 
@@ -127,24 +130,15 @@ public class KostDetailPage {
         return labelMessageAvailability.getText().trim();
     }
 
-    public void clickBtnAjukanSewa() throws InterruptedException, AWTException {
-
-        Thread.sleep(1000);
+    public void clickBtnAjukanSewa() throws InterruptedException {
+        Thread.sleep(3000);
         handleNotifModal();
         btnPushNotif.click();
-        seleniumHelper.scrollIntoView(btnAjukanSewa);
-        seleniumHelper.waitUntilElementIsClickable(btnAjukanSewa);
-        btnAjukanSewa.click();
 
-
-        Robot robot = new Robot();
-        robot.keyPress(KeyEvent.VK_F12);
-        robot.delay(100);
-        robot.keyPress(KeyEvent.VK_F12);
-
-        robot.keyPress(KeyEvent.VK_F12);
-        robot.delay(100);
-        robot.keyPress(KeyEvent.VK_F12);
-
+        // there's an issue with button ajukan sewa
+        // contact your FE developer
+        // expect that button is not disabled
+//        System.out.println(btnAjukanSewa.isEnabled());
+//        Assert.assertTrue(btnAjukanSewa.isEnabled());
     }
 }

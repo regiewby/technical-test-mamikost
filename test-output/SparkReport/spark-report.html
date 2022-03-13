@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Mar 13, 2022 06:32:41 PM</span></a>
+<a href="#"><span class="badge badge-primary">Mar 13, 2022 07:25:42 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Mar 13, 2022 06:32:41 PM</h3>
+<h3>Mar 13, 2022 07:25:42 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Mar 13, 2022 06:33:35 PM</h3>
+<h3>Mar 13, 2022 07:26:27 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -123,9 +123,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div><small data-tooltip='33%'><b>1</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='100%'><b>3</b> scenarios failed,
+<small data-tooltip='66%'><b>2</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -143,10 +143,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='31%'><b>6</b> steps passed</small></div>
+<div><small data-tooltip='47%'><b>9</b> steps passed</small></div>
 <div>
-<small data-tooltip='15%'><b>3</b> steps failed,
-<b>10</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='10%'><b>2</b> steps failed,
+<b>8</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Booking Kost":46.962
+"Booking Kost":39.645
 };
 </script>
 <div class="row">
@@ -198,16 +198,16 @@ failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 0,
-failChild: 3,
+passChild: 1,
+failChild: 2,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 6,
-failGrandChild: 3,
+passGrandChild: 9,
+failGrandChild: 2,
 warningGrandChild: 0,
-skipGrandChild: 10,
+skipGrandChild: 8,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -236,7 +236,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Booking Kost</p>
             <p class="text-sm">
-              <span>6:32:47 PM</span> / <span>00:00:46:962</span>
+              <span>7:25:48 PM</span> / <span>00:00:39:645</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -245,9 +245,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Booking Kost</h5>
-<span class='badge badge-success'>03.13.2022 6:32:47 PM</span>
-<span class='badge badge-danger'>03.13.2022 6:33:34 PM</span>
-<span class='badge badge-default'>00:00:46:962</span>
+<span class='badge badge-success'>03.13.2022 7:25:48 PM</span>
+<span class='badge badge-danger'>03.13.2022 7:26:27 PM</span>
+<span class='badge badge-default'>00:00:39:645</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -259,27 +259,32 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>kost seeker failed make a booking because kamar kost penuh</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>kost seeker can't continue booking kost because he hasn't login yet</div>
       </div>
     </div>
         <div class="scenario_outline ">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>kost seeker failed make a booking because kamar kost penuh</div>
+                  <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>kost seeker can't continue booking kost because he hasn't login yet</div>
                 </div>
               </div>
               <div class="card-body mt-3 ">
-                  <div class="step fail-bg">
-                    <span>Given user logged in as a tenant with credential "08111096967" and "mamikos2022"</span>
+                  <div class="step pass-bg">
+                    <span>Given user navigates to kost Detail Page by url "https://mamikos.com/room/kost-kabupaten-bekasi-kost-campur-eksklusif-kost-pavilion-jababeka-tipe-a-cikarang-utara-bekasi?redirection_source=home%20promo%20recommendation"</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>When user enters "tomorrow" into the text input checkin</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1008, 701)
   (Session info: chrome=99.0.4844.51)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'INFINITY.local', ip: 'fe80:0:0:0:105b:9d0b:a312:e7e7%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/2t/j_1t92511hs...}, goog:chromeOptions: {debuggerAddress: localhost:57012}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 376537e0e6f3fbada79b2179964a0427
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/2t/j_1t92511hs...}, goog:chromeOptions: {debuggerAddress: localhost:63295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5770e62fe11a134bd73a166c587d9d54
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -299,20 +304,25 @@ Session ID: 376537e0e6f3fbada79b2179964a0427
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
-	at com.mamikost.pages.LoginPage.loginTenant(LoginPage.java:44)
-	at com.mamikost.steps.BookingKostStep.user_logged_in_as_a_tenant_with_credential_and(BookingKostStep.java:29)
-	at ✽.user logged in as a tenant with credential "08111096967" and "mamikos2022"(file:///Users/regiewby/git.server/JAVA/technical-test-mamikost/features/bookingKost.feature:22)
+	at com.mamikost.pages.KostDetailPage.inputCheckinDate(KostDetailPage.java:87)
+	at com.mamikost.steps.BookingKostStep.user_enters_into_the_text_input_checkin(BookingKostStep.java:40)
+	at ✽.user enters "tomorrow" into the text input checkin(file:///Users/regiewby/git.server/JAVA/technical-test-mamikost/features/bookingKost.feature:33)
 </textarea>
       
       </div>
                   </div>
                   <div class="step skip-bg">
-                    <span>When user navigates to kost Detail Page by url "https://mamikos.com/room/kost-kabupaten-simeulue-kost-campur-eksklusif-kos-agen-duo-tenant-1#/"</span>
+                    <span>* user inputs "Per Bulan" into DDL booking rent type</span>
       <div>Step skipped
       </div>
                   </div>
                   <div class="step skip-bg">
-                    <span>Then icon kamar penuh will be shown</span>
+                    <span>* user submit booking request</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then modal login will be shown</span>
       <div>Step skipped
       </div>
                   </div>
@@ -323,14 +333,14 @@ Session ID: 376537e0e6f3fbada79b2179964a0427
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="5"><span class="badge log fail-bg mr-2">Fail</span>kost seeker successfully make a booking without complete the entry requirements documents because it's set to optional</div>
+        <div class="node" id="4"><span class="badge log fail-bg mr-2">Fail</span>kost seeker successfully make a booking without complete the entry requirements documents because it's set to optional</div>
       </div>
     </div>
         <div class="scenario_outline ">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="6"><span class="badge log fail-bg mr-2">Fail</span>kost seeker successfully make a booking without complete the entry requirements documents because it's set to optional</div>
+                  <div class="node" id="5"><span class="badge log fail-bg mr-2">Fail</span>kost seeker successfully make a booking without complete the entry requirements documents because it's set to optional</div>
                 </div>
               </div>
               <div class="card-body mt-3 ">
@@ -340,7 +350,7 @@ Session ID: 376537e0e6f3fbada79b2179964a0427
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>* user navigates to kost Detail Page by url "https://mamikos.com/room/kost-kota-jakarta-timur-kost-campur-eksklusif-kost-hommy-tipe-a-duren-sawit-jakarta-timur?redirection_source=home%20promo%20ngebut"</span>
+                    <span>* user navigates to kost Detail Page by url "https://mamikos.com/room/kost-kabupaten-simeulue-kost-campur-eksklusif-kos-agen-duo-tenant-1#/"</span>
       <div>
       </div>
                   </div>
@@ -368,8 +378,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'INFINITY.local', ip: 'fe80:0:0:0:105b:9d0b:a312:e7e7%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/2t/j_1t92511hs...}, goog:chromeOptions: {debuggerAddress: localhost:57013}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 83d6826efeddd5076b58b70b849bb407
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/2t/j_1t92511hs...}, goog:chromeOptions: {debuggerAddress: localhost:63296}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bd9a3dc745894acee7ee0aad1274cea
 *** Element info: {Using=class name, value=bg-c-button booking-request-form__submit-btn hidden-xs bg-c-button--primary bg-c-button--lg bg-c-button--block}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
@@ -438,71 +448,30 @@ Session ID: 83d6826efeddd5076b58b70b849bb407
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="8"><span class="badge log fail-bg mr-2">Fail</span>kost seeker can't continue booking kost because he hasn't login yet</div>
+        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>kost seeker failed make a booking because kamar kost penuh</div>
       </div>
     </div>
-        <div class="scenario_outline ">
+        <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="9"><span class="badge log fail-bg mr-2">Fail</span>kost seeker can't continue booking kost because he hasn't login yet</div>
+                  <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>kost seeker failed make a booking because kamar kost penuh</div>
                 </div>
               </div>
-              <div class="card-body mt-3 ">
+              <div class="card-body mt-3 collapse">
                   <div class="step pass-bg">
-                    <span>Given user navigates to kost Detail Page by url "https://mamikos.com/room/kost-kota-jakarta-timur-kost-campur-eksklusif-kost-hommy-tipe-a-duren-sawit-jakarta-timur?redirection_source=home%20promo%20ngebut"</span>
+                    <span>Given user logged in as a tenant with credential "08111096967" and "mamikos2022"</span>
       <div>
       </div>
                   </div>
-                  <div class="step fail-bg">
-                    <span>When user enters "tomorrow" into the text input checkin</span>
+                  <div class="step pass-bg">
+                    <span>When user navigates to kost Detail Page by url "https://mamikos.com/room/kost-kabupaten-simeulue-kost-campur-eksklusif-kos-agen-duo-tenant-1#/"</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=99.0.4844.51)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'INFINITY.local', ip: 'fe80:0:0:0:105b:9d0b:a312:e7e7%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/2t/j_1t92511hs...}, goog:chromeOptions: {debuggerAddress: localhost:57014}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 769c53a0cc5a1554ecfc293f30389078
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
-	at com.mamikost.pages.KostDetailPage.inputCheckinDate(KostDetailPage.java:86)
-	at com.mamikost.steps.BookingKostStep.user_enters_into_the_text_input_checkin(BookingKostStep.java:40)
-	at ✽.user enters "tomorrow" into the text input checkin(file:///Users/regiewby/git.server/JAVA/technical-test-mamikost/features/bookingKost.feature:33)
-</textarea>
-      
       </div>
                   </div>
-                  <div class="step skip-bg">
-                    <span>* user inputs "Per Bulan" into DDL booking rent type</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>* user submit booking request</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>Then modal login will be shown</span>
-      <div>Step skipped
+                  <div class="step pass-bg">
+                    <span>Then icon kamar penuh will be shown</span>
+      <div>
       </div>
                   </div>
               </div>
@@ -532,15 +501,15 @@ Session ID: 769c53a0cc5a1554ecfc293f30389078
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>2</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">org.openqa.selenium.ElementNotInteractableException</p>
-<p class="duration text-sm">2 tests</p>
+<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.ElementNotInteractableException</h4>
-<span status="fail" class='badge log badge-danger'>2 failed</span>
+<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -553,17 +522,7 @@ Session ID: 769c53a0cc5a1554ecfc293f30389078
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>18:32:47 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='4'>Given user logged in as a tenant with credential "08111096967" and "mamikos2022"</a>
-<div class="">
-<span class="badge badge-default">Booking Kost.kost seeker failed make a booking because kamar kost penuh.Given user logged in as a tenant with credential "08111096967" and "mamikos2022"</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>18:32:49 PM</td>
+<td>19:25:49 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='11'>When user enters "tomorrow" into the text input checkin</a>
 <div class="">
@@ -599,9 +558,9 @@ Session ID: 769c53a0cc5a1554ecfc293f30389078
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>18:33:04 PM</td>
+<td>19:25:57 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='16'>* user submit booking request form</a>
+<a href="#" class="linked" test-id='1' id='21'>* user submit booking request form</a>
 <div class="">
 <span class="badge badge-default">Booking Kost.kost seeker successfully make a booking without complete the entry requirements documents because it's set to optional.* user submit booking request form</span>
 </div>

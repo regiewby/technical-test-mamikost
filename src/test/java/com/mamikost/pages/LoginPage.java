@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import java.util.concurrent.TimeUnit;
 
@@ -39,6 +40,8 @@ public class LoginPage {
     @FindBy(xpath = "//div/img[@alt='login-tenant']")
     private WebElement imgTenant;
 
+    @FindBy(xpath = "//div[@class='form-login login-modal__body']")
+    private WebElement modalLogin;
 
     public void loginTenant(String phoneNumber, String password) throws InterruptedException {
         btnMasuk.click();
@@ -47,5 +50,10 @@ public class LoginPage {
         txtPassword.sendKeys(password);
         btnLogin.click();
         Thread.sleep(3000);
+    }
+
+    public void verifyModalLoginIsExist(){
+        Boolean isExist =  modalLogin.isDisplayed();
+        Assert.assertTrue(modalLogin.isDisplayed());
     }
 }

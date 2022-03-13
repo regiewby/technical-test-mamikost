@@ -20,7 +20,6 @@ public class BrowserFactory {
             WebDriverManager.chromedriver().setup();
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("--disable-notifications");
-            chromeOptions.addArguments("start-maximized");
 //            chromeOptions.addArguments("--auto-open-devtools-for-tabs");
             webDriver = new ChromeDriver(chromeOptions);
             webDriver.manage().window().maximize();
