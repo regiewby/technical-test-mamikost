@@ -15,7 +15,7 @@ Feature: Booking Kost
 
     Examples: booking data
       | phoneNumber | password | url | dateCheckin | bookingRentType |
-      | 08111096967 | mamikos2022 | https://mamikos.com/room/kost-kota-jakarta-timur-kost-campur-eksklusif-kost-hommy-tipe-a-duren-sawit-jakarta-timur?redirection_source=home%20promo%20ngebut | tomorrow | Per Bulan |
+      | 08111096967 | mamikos2022 | https://mamikos.com/room/kost-kabupaten-simeulue-kost-campur-eksklusif-kos-agen-duo-tenant-1#/ | tomorrow | Per Bulan |
 
 
     Scenario Outline: kost seeker failed make a booking because kamar kost penuh
@@ -37,6 +37,6 @@ Feature: Booking Kost
 
         Examples: booking data
         | url | dateCheckin| bookingRentType|
-        | https://mamikos.com/room/kost-kota-jakarta-timur-kost-campur-eksklusif-kost-hommy-tipe-a-duren-sawit-jakarta-timur?redirection_source=home%20promo%20ngebut | tomorrow | Per Bulan |
+        | https://mamikos.com/room/kost-kabupaten-bekasi-kost-campur-eksklusif-kost-pavilion-jababeka-tipe-a-cikarang-utara-bekasi?redirection_source=home%20promo%20recommendation | tomorrow | Per Bulan |
 
 

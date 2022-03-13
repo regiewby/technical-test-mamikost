@@ -46,7 +46,7 @@ public class BookingKostStep {
     }
 
     @When("user submit booking request")
-    public void user_submit_booking_request() throws InterruptedException, AWTException {
+    public void user_submit_booking_request() throws InterruptedException {
         kostDetailPage.clickBtnAjukanSewa();
     }
 
@@ -88,6 +88,7 @@ public class BookingKostStep {
 
     @Then("modal login will be shown")
     public void modal_login_will_be_shown() {
-
+        LoginPage loginPage = new LoginPage(webDriver);
+        loginPage.verifyModalLoginIsExist();
     }
 }
