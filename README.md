@@ -9,7 +9,7 @@ this project developed using several framework tools such as
 ## Folder Structure
 <br/>The folder structure is as following:
 
-    at-web-boilerplate-cucumber
+    techincal-test-mamikost
     │ 
     ├─ features                           # gherkin test cases 
     ├─ src
@@ -19,6 +19,7 @@ this project developed using several framework tools such as
     │         ├─ steps                         # Step Definitions
     │   ├─ main 
     │         ├─ factories                     # implement design pattern factory for init an objects
+    │         ├─ helpers                       # helpers
     │         └─ utilities                     # utility
     ├─ README.md
     ├─ pom.xml
