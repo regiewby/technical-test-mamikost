@@ -27,7 +27,7 @@ this project developed using several framework tools such as
 
 
 ## How to Run
-1. Clone this project by running this url on your terminal
+1. Clone this project from branch Master by running this url on your terminal
     ````
    git clone https://github.com/regiewby/technical-test-mamikost.git    
     ````
