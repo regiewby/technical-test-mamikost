@@ -37,6 +37,6 @@ Feature: Booking Kost
 
         Examples: booking data
         | url | dateCheckin| bookingRentType|
-        | https://mamikos.com/room/kost-kabupaten-bekasi-kost-campur-eksklusif-kost-pavilion-jababeka-tipe-a-cikarang-utara-bekasi?redirection_source=home%20promo%20recommendation | tomorrow | Per Bulan |
+        | https://mamikos.com/room/kost-kabupaten-simeulue-kost-campur-eksklusif-kos-agen-duo-tenant-1#/ | tomorrow | Per Bulan |
 
 

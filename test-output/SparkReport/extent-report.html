@@ -49,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Mar 13, 2022 07:21:33 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Mar 13, 2022 07:25:42 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -126,12 +126,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'>
-                    <span class='strong'>0</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='33%'>
+                    <span class='strong'>1</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
-                    3</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='66%'>
+                    2</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -146,14 +146,14 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='5%'>
-                    <span class='strong'>1</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='47%'>
+                    <span class='strong'>9</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='15%'>
-                    3</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='78%'>
-                    15</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='10%'>
+                    2</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='42%'>
+                    8</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
                 </div>
@@ -177,7 +177,7 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Booking Kost</span>
-						<span class='test-time'>Mar 13, 2022 07:21:37 PM</span>
+						<span class='test-time'>Mar 13, 2022 07:25:48 PM</span>
 						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
@@ -190,175 +190,7 @@
 
 <div class='scenario outline node' test-id='2' status='Fail'>
 
-	<span class='duration right label'>00 00 30.074</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: kost seeker failed make a booking because kamar kost penuh</div>
-	</div>
-	
-		<div class='node-desc'><br><br>booking data<table class='markup-table table '><tr><td>phoneNumber</td><td>password</td><td>url</td></tr><tr><td>08111096967</td><td>mamikos2022</td><td>https://mamikos.com/room/kost-kabupaten-simeulue-kost-campur-eksklusif-kos-agen-duo-tenant-1#/</td></tr></table></div>
-	
-	
-	<ul class='steps'>
-		<li test-id='3' class='node scenario Fail' status='Fail'>
-			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>kost seeker failed make a booking because kamar kost penuh</div>
-
-
-			<ul class='gc steps'>
-				<li test-id='4' class='gc given Fail' status='Fail'>
-					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.user_logged_in_as_a_tenant_with_credential_and(java.lang.String,java.lang.String)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Given user logged in as a tenant with credential "08111096967" and "mamikos2022"</h6>
-
-							<textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: headless chrome=99.0.4844.51)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'INFINITY.local', ip: 'fe80:0:0:0:105b:9d0b:a312:e7e7%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/2t/j_1t92511hs...}, goog:chromeOptions: {debuggerAddress: localhost:63016}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9253421d313a0fb47aa56ff1c75d5e6d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
-	at com.mamikost.pages.LoginPage.loginTenant(LoginPage.java:47)
-	at com.mamikost.steps.BookingKostStep.user_logged_in_as_a_tenant_with_credential_and(BookingKostStep.java:29)
-	at ✽.user logged in as a tenant with credential "08111096967" and "mamikos2022"(file:///Users/regiewby/git.server/JAVA/technical-test-mamikost/features/bookingKost.feature:22)
-</textarea>
-				</li>
-				<li test-id='12' class='gc when Skip' status='Skip'>
-					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.user_navigates_to_kost_detail_page_by_url(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When user navigates to kost Detail Page by url "https://mamikos.com/room/kost-kabupaten-simeulue-kost-campur-eksklusif-kos-agen-duo-tenant-1#/"</h6>
-
-							<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='13' class='gc then Skip' status='Skip'>
-					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.icon_kamar_penuh_will_be_shown()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then icon kamar penuh will be shown</h6>
-
-							<div class="node-step">Step skipped</div>
-				</li>
-			</ul>
-		</li>
-	</ul>
-</div>
-<div class='scenario outline node' test-id='5' status='Fail'>
-
-	<span class='duration right label'>00 00 30.052</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: kost seeker successfully make a booking without complete the entry requirements documents because it's set to optional</div>
-	</div>
-	
-		<div class='node-desc'><br><br>booking data<table class='markup-table table '><tr><td>phoneNumber</td><td>password</td><td>url</td><td>dateCheckin</td><td>bookingRentType</td></tr><tr><td>08111096967</td><td>mamikos2022</td><td>https://mamikos.com/room/kost-kabupaten-simeulue-kost-campur-eksklusif-kos-agen-duo-tenant-1#/</td><td>tomorrow</td><td>Per Bulan</td></tr></table></div>
-	
-	
-	<ul class='steps'>
-		<li test-id='6' class='node scenario Fail' status='Fail'>
-			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>kost seeker successfully make a booking without complete the entry requirements documents because it's set to optional</div>
-
-
-			<ul class='gc steps'>
-				<li test-id='7' class='gc given Fail' status='Fail'>
-					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.user_logged_in_as_a_tenant_with_credential_and(java.lang.String,java.lang.String)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Given user logged in as a tenant with credential "08111096967" and "mamikos2022"</h6>
-
-							<textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: headless chrome=99.0.4844.51)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'INFINITY.local', ip: 'fe80:0:0:0:105b:9d0b:a312:e7e7%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/2t/j_1t92511hs...}, goog:chromeOptions: {debuggerAddress: localhost:63015}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a15caf7a6fc121d01f48973abbac0bcd
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
-	at com.mamikost.pages.LoginPage.loginTenant(LoginPage.java:47)
-	at com.mamikost.steps.BookingKostStep.user_logged_in_as_a_tenant_with_credential_and(BookingKostStep.java:29)
-	at ✽.user logged in as a tenant with credential "08111096967" and "mamikos2022"(file:///Users/regiewby/git.server/JAVA/technical-test-mamikost/features/bookingKost.feature:4)
-</textarea>
-				</li>
-				<li test-id='14' class='gc * Skip' status='Skip'>
-					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.user_navigates_to_kost_detail_page_by_url(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>* user navigates to kost Detail Page by url "https://mamikos.com/room/kost-kabupaten-simeulue-kost-campur-eksklusif-kos-agen-duo-tenant-1#/"</h6>
-
-							<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='15' class='gc when Skip' status='Skip'>
-					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.user_enters_into_the_text_input_checkin(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When user enters "tomorrow" into the text input checkin</h6>
-
-							<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='16' class='gc * Skip' status='Skip'>
-					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.user_inputs_into_ddl_booking_rent_type(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>* user inputs "Per Bulan" into DDL booking rent type</h6>
-
-							<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='17' class='gc * Skip' status='Skip'>
-					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.user_submit_booking_request()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>* user submit booking request</h6>
-
-							<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='18' class='gc * Skip' status='Skip'>
-					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.user_submit_booking_request_form()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>* user submit booking request form</h6>
-
-							<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='19' class='gc * Skip' status='Skip'>
-					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.user_checks_agreement_letter_on_kost_information_page()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>* user checks agreement letter on kost information page</h6>
-
-							<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='20' class='gc * Skip' status='Skip'>
-					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.user_clicks_button_kirim_pengajuan_ke_pemilik()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>* user clicks button kirim pengajuan ke pemilik</h6>
-
-							<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='21' class='gc then Skip' status='Skip'>
-					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.user_should_be_directed_to_booking_success_page()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then user should be directed to booking success page</h6>
-
-							<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='22' class='gc * Skip' status='Skip'>
-					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.message_should_be_visible(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>* message "Pengajuan sewa berhasil dikirim" should be visible</h6>
-
-							<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='23' class='gc * Skip' status='Skip'>
-					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.lihat_status_pengajuan_should_be_visible(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>* button lihat status pengajuan should be visible</h6>
-
-							<div class="node-step">Step skipped</div>
-				</li>
-			</ul>
-		</li>
-	</ul>
-</div>
-<div class='scenario outline node' test-id='8' status='Fail'>
-
-	<span class='duration right label'>00 00 31.416</span>
+	<span class='duration right label'>00 00 03.174</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: kost seeker can't continue booking kost because he hasn't login yet</div>
 	</div>
@@ -367,25 +199,25 @@ Session ID: a15caf7a6fc121d01f48973abbac0bcd
 	
 	
 	<ul class='steps'>
-		<li test-id='9' class='node scenario Fail' status='Fail'>
+		<li test-id='3' class='node scenario Fail' status='Fail'>
 			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>kost seeker can't continue booking kost because he hasn't login yet</div>
 
 
 			<ul class='gc steps'>
-				<li test-id='10' class='gc given Pass' status='Pass'>
+				<li test-id='6' class='gc given Pass' status='Pass'>
 					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.user_navigates_to_kost_detail_page_by_url(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user navigates to kost Detail Page by url "https://mamikos.com/room/kost-kabupaten-bekasi-kost-campur-eksklusif-kost-pavilion-jababeka-tipe-a-cikarang-utara-bekasi?redirection_source=home%20promo%20recommendation"</h6>
 
 				</li>
 				<li test-id='11' class='gc when Fail' status='Fail'>
 					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.user_enters_into_the_text_input_checkin(java.lang.String)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>When user enters "tomorrow" into the text input checkin</h6>
 
-							<textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: headless chrome=99.0.4844.51)
+							<textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1008, 701)
+  (Session info: chrome=99.0.4844.51)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'INFINITY.local', ip: 'fe80:0:0:0:105b:9d0b:a312:e7e7%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/2t/j_1t92511hs...}, goog:chromeOptions: {debuggerAddress: localhost:63017}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 90714f561e60a3ceaf029ae1b7d73911
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/2t/j_1t92511hs...}, goog:chromeOptions: {debuggerAddress: localhost:63295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5770e62fe11a134bd73a166c587d9d54
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -410,20 +242,162 @@ Session ID: 90714f561e60a3ceaf029ae1b7d73911
 	at ✽.user enters "tomorrow" into the text input checkin(file:///Users/regiewby/git.server/JAVA/technical-test-mamikost/features/bookingKost.feature:33)
 </textarea>
 				</li>
-				<li test-id='24' class='gc * Skip' status='Skip'>
+				<li test-id='12' class='gc * Skip' status='Skip'>
 					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.user_inputs_into_ddl_booking_rent_type(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>* user inputs "Per Bulan" into DDL booking rent type</h6>
 
 							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='25' class='gc * Skip' status='Skip'>
+				<li test-id='13' class='gc * Skip' status='Skip'>
 					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.user_submit_booking_request()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>* user submit booking request</h6>
 
 							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='26' class='gc then Skip' status='Skip'>
+				<li test-id='14' class='gc then Skip' status='Skip'>
 					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.modal_login_will_be_shown()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then modal login will be shown</h6>
 
 							<div class="node-step">Step skipped</div>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario outline node' test-id='4' status='Fail'>
+
+	<span class='duration right label'>00 00 39.639</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: kost seeker successfully make a booking without complete the entry requirements documents because it's set to optional</div>
+	</div>
+	
+		<div class='node-desc'><br><br>booking data<table class='markup-table table '><tr><td>phoneNumber</td><td>password</td><td>url</td><td>dateCheckin</td><td>bookingRentType</td></tr><tr><td>08111096967</td><td>mamikos2022</td><td>https://mamikos.com/room/kost-kabupaten-simeulue-kost-campur-eksklusif-kos-agen-duo-tenant-1#/</td><td>tomorrow</td><td>Per Bulan</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='5' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>kost seeker successfully make a booking without complete the entry requirements documents because it's set to optional</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='7' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.user_logged_in_as_a_tenant_with_credential_and(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user logged in as a tenant with credential "08111096967" and "mamikos2022"</h6>
+
+				</li>
+				<li test-id='15' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.user_navigates_to_kost_detail_page_by_url(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>* user navigates to kost Detail Page by url "https://mamikos.com/room/kost-kabupaten-simeulue-kost-campur-eksklusif-kos-agen-duo-tenant-1#/"</h6>
+
+				</li>
+				<li test-id='17' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.user_enters_into_the_text_input_checkin(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When user enters "tomorrow" into the text input checkin</h6>
+
+				</li>
+				<li test-id='19' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.user_inputs_into_ddl_booking_rent_type(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>* user inputs "Per Bulan" into DDL booking rent type</h6>
+
+				</li>
+				<li test-id='20' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.user_submit_booking_request()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>* user submit booking request</h6>
+
+				</li>
+				<li test-id='21' class='gc * Fail' status='Fail'>
+					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.user_submit_booking_request_form()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>* user submit booking request form</h6>
+
+							<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".bg\-c\-button\ booking\-request\-form__submit\-btn\ hidden\-xs\ bg\-c\-button\-\-primary\ bg\-c\-button\-\-lg\ bg\-c\-button\-\-block"}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INFINITY.local', ip: 'fe80:0:0:0:105b:9d0b:a312:e7e7%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/2t/j_1t92511hs...}, goog:chromeOptions: {debuggerAddress: localhost:63296}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bd9a3dc745894acee7ee0aad1274cea
+*** Element info: {Using=class name, value=bg-c-button booking-request-form__submit-btn hidden-xs bg-c-button--primary bg-c-button--lg bg-c-button--block}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at com.mamikost.helpers.SeleniumHelper.scrollIntoView(SeleniumHelper.java:40)
+	at com.mamikost.pages.BookingRequestFormPage.clickBtnSubmitReqBooking(BookingRequestFormPage.java:38)
+	at com.mamikost.steps.BookingKostStep.user_submit_booking_request_form(BookingKostStep.java:55)
+	at ✽.user submit booking request form(file:///Users/regiewby/git.server/JAVA/technical-test-mamikost/features/bookingKost.feature:9)
+</textarea>
+				</li>
+				<li test-id='22' class='gc * Skip' status='Skip'>
+					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.user_checks_agreement_letter_on_kost_information_page()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>* user checks agreement letter on kost information page</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='23' class='gc * Skip' status='Skip'>
+					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.user_clicks_button_kirim_pengajuan_ke_pemilik()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>* user clicks button kirim pengajuan ke pemilik</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='24' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.user_should_be_directed_to_booking_success_page()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then user should be directed to booking success page</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='25' class='gc * Skip' status='Skip'>
+					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.message_should_be_visible(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>* message "Pengajuan sewa berhasil dikirim" should be visible</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='26' class='gc * Skip' status='Skip'>
+					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.lihat_status_pengajuan_should_be_visible(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>* button lihat status pengajuan should be visible</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario outline node' test-id='8' status='Pass'>
+
+	<span class='duration right label'>00 00 04.481</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: kost seeker failed make a booking because kamar kost penuh</div>
+	</div>
+	
+		<div class='node-desc'><br><br>booking data<table class='markup-table table '><tr><td>phoneNumber</td><td>password</td><td>url</td></tr><tr><td>08111096967</td><td>mamikos2022</td><td>https://mamikos.com/room/kost-kabupaten-simeulue-kost-campur-eksklusif-kos-agen-duo-tenant-1#/</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='9' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>kost seeker failed make a booking because kamar kost penuh</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='10' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.user_logged_in_as_a_tenant_with_credential_and(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user logged in as a tenant with credential "08111096967" and "mamikos2022"</h6>
+
+				</li>
+				<li test-id='16' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.user_navigates_to_kost_detail_page_by_url(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When user navigates to kost Detail Page by url "https://mamikos.com/room/kost-kabupaten-simeulue-kost-campur-eksklusif-kos-agen-duo-tenant-1#/"</h6>
+
+				</li>
+				<li test-id='18' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.mamikost.steps.BookingKostStep.icon_kamar_penuh_will_be_shown()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then icon kamar penuh will be shown</h6>
+
 				</li>
 			</ul>
 		</li>
@@ -473,8 +447,8 @@ Session ID: 90714f561e60a3ceaf029ae1b7d73911
 			<ul id='exception-collection' class='exception-collection'>
 				<li class='exception displayed active'>
 					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.ElementNotInteractableException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>3</span></span>
+						<span class='exception-name'>org.openqa.selenium.ElementClickInterceptedException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
 					</div>
 					<div class='exception-content hide'>
 						<div class='exception-tests'>
@@ -488,88 +462,16 @@ Session ID: 90714f561e60a3ceaf029ae1b7d73911
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 13, 2022 07:21:37 PM</td>
-										<td class='linked' test-id='4'>Given user logged in as a tenant with credential "08111096967" and "mamikos2022"</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: headless chrome=99.0.4844.51)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'INFINITY.local', ip: 'fe80:0:0:0:105b:9d0b:a312:e7e7%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/2t/j_1t92511hs...}, goog:chromeOptions: {debuggerAddress: localhost:63016}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9253421d313a0fb47aa56ff1c75d5e6d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
-	at com.mamikost.pages.LoginPage.loginTenant(LoginPage.java:47)
-	at com.mamikost.steps.BookingKostStep.user_logged_in_as_a_tenant_with_credential_and(BookingKostStep.java:29)
-	at ✽.user logged in as a tenant with credential "08111096967" and "mamikos2022"(file:///Users/regiewby/git.server/JAVA/technical-test-mamikost/features/bookingKost.feature:22)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Mar 13, 2022 07:21:37 PM</td>
-										<td class='linked' test-id='7'>Given user logged in as a tenant with credential "08111096967" and "mamikos2022"</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: headless chrome=99.0.4844.51)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'INFINITY.local', ip: 'fe80:0:0:0:105b:9d0b:a312:e7e7%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/2t/j_1t92511hs...}, goog:chromeOptions: {debuggerAddress: localhost:63016}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9253421d313a0fb47aa56ff1c75d5e6d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
-	at com.mamikost.pages.LoginPage.loginTenant(LoginPage.java:47)
-	at com.mamikost.steps.BookingKostStep.user_logged_in_as_a_tenant_with_credential_and(BookingKostStep.java:29)
-	at ✽.user logged in as a tenant with credential "08111096967" and "mamikos2022"(file:///Users/regiewby/git.server/JAVA/technical-test-mamikost/features/bookingKost.feature:22)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Mar 13, 2022 07:21:39 PM</td>
+										<td>Mar 13, 2022 07:25:49 PM</td>
 										<td class='linked' test-id='11'>When user enters "tomorrow" into the text input checkin</td>
 										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: headless chrome=99.0.4844.51)
+											<textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1008, 701)
+  (Session info: chrome=99.0.4844.51)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'INFINITY.local', ip: 'fe80:0:0:0:105b:9d0b:a312:e7e7%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/2t/j_1t92511hs...}, goog:chromeOptions: {debuggerAddress: localhost:63016}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9253421d313a0fb47aa56ff1c75d5e6d
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/2t/j_1t92511hs...}, goog:chromeOptions: {debuggerAddress: localhost:63295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5770e62fe11a134bd73a166c587d9d54
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -589,9 +491,77 @@ Session ID: 9253421d313a0fb47aa56ff1c75d5e6d
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
-	at com.mamikost.pages.LoginPage.loginTenant(LoginPage.java:47)
-	at com.mamikost.steps.BookingKostStep.user_logged_in_as_a_tenant_with_credential_and(BookingKostStep.java:29)
-	at ✽.user logged in as a tenant with credential "08111096967" and "mamikos2022"(file:///Users/regiewby/git.server/JAVA/technical-test-mamikost/features/bookingKost.feature:22)
+	at com.mamikost.pages.KostDetailPage.inputCheckinDate(KostDetailPage.java:87)
+	at com.mamikost.steps.BookingKostStep.user_enters_into_the_text_input_checkin(BookingKostStep.java:40)
+	at ✽.user enters "tomorrow" into the text input checkin(file:///Users/regiewby/git.server/JAVA/technical-test-mamikost/features/bookingKost.feature:33)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>StackTrace</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 13, 2022 07:25:57 PM</td>
+										<td class='linked' test-id='21'>* user submit booking request form</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".bg\-c\-button\ booking\-request\-form__submit\-btn\ hidden\-xs\ bg\-c\-button\-\-primary\ bg\-c\-button\-\-lg\ bg\-c\-button\-\-block"}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INFINITY.local', ip: 'fe80:0:0:0:105b:9d0b:a312:e7e7%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/2t/j_1t92511hs...}, goog:chromeOptions: {debuggerAddress: localhost:63296}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bd9a3dc745894acee7ee0aad1274cea
+*** Element info: {Using=class name, value=bg-c-button booking-request-form__submit-btn hidden-xs bg-c-button--primary bg-c-button--lg bg-c-button--block}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at com.mamikost.helpers.SeleniumHelper.scrollIntoView(SeleniumHelper.java:40)
+	at com.mamikost.pages.BookingRequestFormPage.clickBtnSubmitReqBooking(BookingRequestFormPage.java:38)
+	at com.mamikost.steps.BookingKostStep.user_submit_booking_request_form(BookingKostStep.java:55)
+	at ✽.user submit booking request form(file:///Users/regiewby/git.server/JAVA/technical-test-mamikost/features/bookingKost.feature:9)
 </textarea>
 										</td>
 									</tr>
@@ -635,19 +605,19 @@ Session ID: 9253421d313a0fb47aa56ff1c75d5e6d
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Mar 13, 2022 07:21:33 PM</div>
+					<div class='panel-lead'>Mar 13, 2022 07:25:42 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Mar 13, 2022 07:22:09 PM</div>
+			 		<div class='panel-lead'>Mar 13, 2022 07:26:27 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 36.253</div>
+					<div class='panel-lead'>00 00 45.236</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -690,27 +660,27 @@ Session ID: 9253421d313a0fb47aa56ff1c75d5e6d
 				warningParent: 0,
 				skipParent: 0,
 				childCount: 3,
-				passChild: 0,
-				failChild: 3,
+				passChild: 1,
+				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				grandChildCount: 19,
-				passGrandChild: 1,
-				failGrandChild: 3,
+				passGrandChild: 9,
+				failGrandChild: 2,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 15,
+				skipGrandChild: 8,
 				infoGrandChild: 0,
 			};
 			</script>
 		
 		<script>
 			var timeline = {
-			        "Booking Kost":31.987
+			        "Booking Kost":39.645
 			};
 		</script>
 		
