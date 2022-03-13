@@ -39,7 +39,7 @@ this project developed using several framework tools such as
      
 3. Running using maven
 ````
-mvn clean
+mvn test
 ````
 3. Or you can do right click on testng.xml file and click 'Run .../testng.xml' if you're using IntelliJ IDEA
 
